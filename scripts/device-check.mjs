@@ -64,6 +64,28 @@ async function providers(label) {
   }
 }
 
+/**
+ * Under load the emulator's own apps (Pixel Launcher, System UI) sometimes stop responding, and their
+ * "isn't responding" dialog takes every key press and touch. Stopping that app closes its dialog.
+ */
+async function clearSystemDialogs() {
+  try {
+    const focus = String(await device.shell('dumpsys window | grep mCurrentFocus'));
+    const m = focus.match(/Not Responding: ([\w.]+)/);
+    if (!m) return;
+    if (m[1] === PKG) {
+      log('ANR', 'Batwara itself is not responding');
+      failed.push('app not responding');
+      return;
+    }
+    log('system', `${m[1]} isn't responding; stopping it so its dialog doesn't take the input`);
+    await device.shell(`am force-stop ${m[1]}`);
+    await wait(2000);
+  } catch { /* dumpsys unavailable */ }
+}
+const key = async (code) => { await clearSystemDialogs(); await device.shell(`input keyevent ${code}`); };
+const swipe = async (args) => { await clearSystemDialogs(); await device.shell(`input swipe ${args}`); };
+
 const active = '.navstack:not(.is-inactive)';
 const goa = `${active} .row-title:has-text("Goa trip")`;
 const screens = () => page.locator(`${active} .screen-host`).count();
@@ -109,7 +131,7 @@ async function ready() {
 
 /** Back to the groups list from wherever the last step stopped. */
 async function home() {
-  for (let i = 0; i < 4 && (await sheets()) > 0; i++) { await device.shell('input keyevent 4'); await wait(1500); }
+  for (let i = 0; i < 4 && (await sheets()) > 0; i++) { await key(4); await wait(1500); }
   await page.click('.tab:has-text("Groups")');
   await until('groups list', screens, 1);
   await page.waitForSelector(goa, { timeout: 15000 });
@@ -127,6 +149,7 @@ async function openGroup() {
 async function step(name, fn) {
   for (let attempt = 1; ; attempt++) {
     try {
+      await clearSystemDialogs();
       await fn();
       return;
     } catch (e) {
@@ -143,6 +166,9 @@ async function step(name, fn) {
 }
 
 try {
+  for (const cmd of ['settings put secure anr_show_background 0', 'settings put global window_animation_scale 0', 'settings put global transition_animation_scale 0']) {
+    await device.shell(cmd).catch(() => {});
+  }
   await launch();
   await step('onboarding', ready);
   await providers('after-onboarding');
@@ -156,13 +182,13 @@ try {
 
   await step('back-button', async () => {
     await openGroup();
-    await device.shell('input keyevent 4');
+    await key(4);
     await until('back button pops the screen', screens, 1);
   });
 
   await step('swipe-back', async () => {
     await openGroup();
-    await device.shell('input swipe 160 1500 1000 1520 220');
+    await swipe('160 1500 1000 1520 220');
     await until('swipe right pops the screen', screens, 1);
   });
 
@@ -188,16 +214,18 @@ try {
     await page.click('.sheet-card .row:has-text("Aarav")');
     await wait(1200);
     await shotOf('10-pay');
-    await device.shell('input keyevent 4');
+    await key(4);
     await until('back button closes the sheet', sheets, 0);
   });
+
+  await providers('after-settle');
 
   await step('drag-dismiss', async () => {
     await openGroup();
     await page.click(`${active} .btn:has-text("Settle Up")`);
     await until('settle sheet open', sheets, 1);
     await wait(900);
-    await device.shell('input swipe 540 420 540 2100 260');
+    await swipe('540 420 540 2100 260');
     await until('dragging the sheet down closes it', sheets, 0);
   });
 
@@ -208,7 +236,7 @@ try {
     await page.click('text=Send Update to Members');
     await wait(3500);
     await shotOf('11-android-share-sheet');
-    await device.shell('input keyevent 4');
+    await key(4);
     await wait(2000);
   });
 
