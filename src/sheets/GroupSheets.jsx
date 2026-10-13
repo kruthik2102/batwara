@@ -48,7 +48,7 @@ function PersonEntry({ onAdd, existing = [], myPhone, compact }) {
         <Field label="Name" value={name} onInput={(v) => { setName(v); setErr(''); }} placeholder="Their name" inputRef={nameRef} maxLength={60} autocomplete="off" enterKeyHint="next" />
         <Field label="Mobile" prefix="+91" value={phone} onInput={(v) => { setPhone(v.replace(/[^\d+ ]/g, '')); setErr(''); }} placeholder="98765 43210" type="tel" inputMode="tel" autocomplete="off" enterKeyHint="done"
           onKeyDown={(e) => e.key === 'Enter' && add()}
-          suffix={<Button size="small" variant="tinted" disabled={!name.trim() || phone.replace(/\D/g, '').length < 10} onClick={() => add()}>Add</Button>} />
+          suffix={<Button size="small" variant="tinted" disabled={!name.trim() || !phone.trim()} onClick={() => add()}>Add</Button>} />
       </Section>
       {err && <p class="field-error" style={{ marginTop: '-14px', marginBottom: '14px' }}>{err}</p>}
     </>

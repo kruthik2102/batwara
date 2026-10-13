@@ -249,7 +249,7 @@ function hue(s) {
 
 export function Avatar({ uid, name, size = 40, me }) {
   return (
-    <span class={'avatar c-' + (me ? 'tint' : hue(uid || name))} style={{ width: `${size}px`, height: `${size}px`, fontSize: `${Math.round(size * 0.4)}px` }} aria-hidden="true">
+    <span class={'avatar c-' + (me ? 'tint' : hue(name || uid))} style={{ width: `${size}px`, height: `${size}px`, fontSize: `${Math.round(size * 0.4)}px` }} aria-hidden="true">
       {initials(name)}
     </span>
   );

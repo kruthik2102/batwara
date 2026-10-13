@@ -125,7 +125,7 @@ export function SettleUpSheet({ gid, to, from, amount }) {
             <div class="t-headline">{nameOf(peer)}</div>
             <label class="pay-amount">
               <span>{g.cur === 'INR' ? '₹' : g.cur}</span>
-              <input value={amt} size={Math.max(1, amt.length)} inputMode="decimal" placeholder="0" aria-label="Amount to pay" onInput={(e) => setAmt(e.currentTarget.value.replace(/[^\d.]/g, ''))} />
+              <input value={amt} style={{ width: `${Math.max(1, amt.length) * 0.64}em` }} inputMode="decimal" placeholder="0" aria-label="Amount to pay" onInput={(e) => setAmt(e.currentTarget.value.replace(/[^\d.]/g, ''))} />
             </label>
           </div>
           {!upiOk && (
@@ -223,7 +223,7 @@ export function SettleUpSheet({ gid, to, from, amount }) {
             <div class="t-headline">{nameOf(peer)} pays you</div>
             <label class="pay-amount">
               <span>{g.cur === 'INR' ? '₹' : g.cur}</span>
-              <input value={amt} size={Math.max(1, amt.length)} inputMode="decimal" placeholder="0" aria-label="Amount received" onInput={(e) => setAmt(e.currentTarget.value.replace(/[^\d.]/g, ''))} />
+              <input value={amt} style={{ width: `${Math.max(1, amt.length) * 0.64}em` }} inputMode="decimal" placeholder="0" aria-label="Amount received" onInput={(e) => setAmt(e.currentTarget.value.replace(/[^\d.]/g, ''))} />
             </label>
           </div>
           <Section header="Got the money?" footer="You’re the one receiving it, so recording it here confirms it straight away.">
