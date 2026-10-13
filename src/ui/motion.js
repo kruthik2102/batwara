@@ -40,7 +40,7 @@ export class Spring {
       this.resolve = resolve;
       let last = performance.now();
       const frame = (now) => {
-        let dt = Math.min(0.064, (now - last) / 1000);
+        let dt = Math.min(0.25, Math.max(0, (now - last) / 1000));
         last = now;
         const w = (2 * Math.PI) / this.response;
         const k = w * w;
@@ -110,6 +110,9 @@ export class VelocityTracker {
   add(t, x, y) {
     this.samples.push({ t, x, y });
     while (this.samples.length > 2 && t - this.samples[0].t > 100) this.samples.shift();
+  }
+  lastTime() {
+    return this.samples.length ? this.samples[this.samples.length - 1].t : 0;
   }
   velocity() {
     const s = this.samples;

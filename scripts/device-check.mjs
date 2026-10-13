@@ -9,7 +9,7 @@ fs.mkdirSync(OUT, { recursive: true });
 const log = (...a) => { const line = a.join(' '); console.log(line); fs.appendFileSync(`${OUT}/log.txt`, line + '\n'); };
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
 /** Poll until fn() returns the expected value (the software-rendered emulator is slow). */
-async function until(label, fn, expected, timeout = 8000) {
+async function until(label, fn, expected, timeout = 12000) {
   const t0 = Date.now();
   let v;
   while (Date.now() - t0 < timeout) {
@@ -151,6 +151,11 @@ try {
 } catch (e) {
   log('RESULT failed at', step, String(e && e.stack || e));
   try { fs.writeFileSync(`${OUT}/failure.png`, await device.screenshot()); } catch {}
+  try {
+    // If Android stopped the app, say why.
+    const am = String(await device.shell('logcat -d -v time -s ActivityManager:I ActivityTaskManager:W'));
+    for (const l of am.split('\n').filter((x) => x.includes(PKG)).slice(-6)) log('system', l.trim());
+  } catch {}
   process.exitCode = 1;
 } finally {
   await device.close();

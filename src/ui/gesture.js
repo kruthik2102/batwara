@@ -19,7 +19,10 @@ export function attachDrag(el, cfg) {
   let st = null;
 
   const begin = (x, y, t, e) => {
-    st = { x0: x, y0: y, claimed: false, dead: false, vt: new VelocityTracker(), lastDx: 0, lastDy: 0 };
+    // A new touch means any earlier gesture is over, even one whose end event never reached us
+    // (its target was removed mid-drag), so it can't keep blocking the recognisers.
+    owner = null;
+    st = { x0: x, y0: y, px: x, py: y, claimed: false, dead: false, vt: new VelocityTracker(), lastDx: 0, lastDy: 0 };
     st.vt.add(t, x, y);
     cfg.down?.(e);
   };
@@ -27,6 +30,8 @@ export function attachDrag(el, cfg) {
   const track = (x, y, t, e) => {
     if (!st || st.dead) return false;
     st.vt.add(t, x, y);
+    st.px = x;
+    st.py = y;
     let dx = x - st.x0;
     let dy = y - st.y0;
     if (!st.claimed) {
@@ -45,11 +50,17 @@ export function attachDrag(el, cfg) {
       }
       st.claimed = true;
       owner = st;
-      // Track 1:1 from here on, so the content doesn't jump by the slop distance.
-      st.x0 = x;
-      st.y0 = y;
-      dx = 0;
-      dy = 0;
+      // Follow the finger from here, less the slop, so the content doesn't jump by the slop distance.
+      // On a busy phone the first move can arrive far past the slop; that distance is kept.
+      if (cfg.axis === 'x') {
+        st.x0 += Math.sign(dx) * SLOP;
+        st.y0 = y;
+      } else {
+        st.y0 += Math.sign(dy) * SLOP;
+        st.x0 = x;
+      }
+      dx = x - st.x0;
+      dy = y - st.y0;
       cfg.start?.(e);
     }
     st.lastDx = dx;
@@ -58,13 +69,18 @@ export function attachDrag(el, cfg) {
     return true;
   };
 
-  const finish = (cancelled) => {
+  /** (x, y, t) is where and when the finger lifted, when known. */
+  const finish = (cancelled, x, y, t, e) => {
     if (!st) return;
+    // The lift can land past the last move we saw (moves get merged when the phone is busy).
+    if (!cancelled && x !== undefined && (x !== st.px || y !== st.py)) track(x, y, t, e);
     const s = st;
     st = null;
     if (owner === s) owner = null;
     if (!s.claimed) return;
-    const { vx, vy } = s.vt.velocity();
+    let { vx, vy } = s.vt.velocity();
+    // A finger that rested before lifting has no velocity, whatever it was doing before.
+    if (t !== undefined && t - s.vt.lastTime() > 50) vx = vy = 0;
     cfg.end({ dx: s.lastDx, dy: s.lastDy, vx, vy, cancelled });
   };
 
@@ -79,7 +95,11 @@ export function attachDrag(el, cfg) {
     const t = e.touches[0];
     if (track(t.clientX, t.clientY, e.timeStamp, e) && e.cancelable) e.preventDefault();
   };
-  const te = (e) => finish(e.type === 'touchcancel');
+  const te = (e) => {
+    const t = e.changedTouches?.[0];
+    if (e.type === 'touchcancel' || !t) finish(true);
+    else finish(false, t.clientX, t.clientY, e.timeStamp, e);
+  };
 
   // mouse (desktop testing)
   const md = (e) => {
@@ -88,10 +108,10 @@ export function attachDrag(el, cfg) {
     const mm = (ev) => {
       if (track(ev.clientX, ev.clientY, ev.timeStamp, ev)) ev.preventDefault();
     };
-    const mu = () => {
+    const mu = (ev) => {
       window.removeEventListener('pointermove', mm);
       window.removeEventListener('pointerup', mu);
-      finish(false);
+      finish(false, ev.clientX, ev.clientY, ev.timeStamp, ev);
     };
     window.addEventListener('pointermove', mm);
     window.addEventListener('pointerup', mu);
