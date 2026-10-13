@@ -7,7 +7,7 @@ import { Icon } from './ui/icons.jsx';
 import { Spring } from './ui/motion.js';
 import { useStore } from './ui/kit.jsx';
 import { applyTheme, onSystemThemeChange } from './ui/theme.js';
-import { onBackButton, minimizeApp, onKeyboard, onOpenFile, readUriText, onAppResume, onAppPause, refreshInsets } from './platform/native.js';
+import { onBackButton, minimizeApp, onKeyboard, onOpenFile, readUriText, onAppResume, onAppPause, refreshInsets, onSystemChange } from './platform/native.js';
 import { store } from './store.js';
 
 import { Onboarding, onboardingBack } from './screens/Onboarding.jsx';
@@ -131,9 +131,10 @@ export function App() {
         if (open) setTimeout(() => document.activeElement?.scrollIntoView?.({ block: 'center', behavior: 'smooth' }), 120);
       }),
       onOpenFile(openUri),
-      onAppResume(() => { store.materializeRecurring(); refreshInsets(); }),
+      onAppResume(() => { store.materializeRecurring(); refreshInsets().then(() => applyTheme(store.prefs.theme)); }),
       onAppPause(() => store.saveNow()),
       onSystemThemeChange(() => applyTheme(store.prefs.theme)),
+      onSystemChange(() => applyTheme(store.prefs.theme)),
     ];
     return () => offs.forEach((f) => f && f());
   }, []);

@@ -96,3 +96,62 @@ jobs:
           git add -A
           git commit -qm "Build log for ${GITHUB_SHA::7}"
           git push -fq "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-log
+
+  # Boots an Android 14 emulator, installs a debug build and drives it through the WebView,
+  # saving real device screenshots to the device-check branch. Doesn't block the APK release.
+  device-check:
+    needs: apk
+    runs-on: ubuntu-latest
+    timeout-minutes: 40
+    continue-on-error: true
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Build a debug APK
+        run: |
+          npm ci
+          npm run build
+          npx cap sync android
+          cd android && chmod +x gradlew && ./gradlew assembleDebug --no-daemon
+
+      - name: Install the device driver
+        run: npm i --no-save playwright-core@1.56.1
+
+      - name: Enable KVM
+        run: |
+          echo 'KERNEL=="kvm", GROUP="kvm", MODE="0666", OPTIONS+="static_node=kvm"' | sudo tee /etc/udev/rules.d/99-kvm4all.rules
+          sudo udevadm control --reload-rules
+          sudo udevadm trigger --name-match=kvm
+
+      - name: Run on an Android 14 emulator
+        uses: reactivecircus/android-emulator-runner@v2
+        with:
+          api-level: 34
+          target: google_apis
+          arch: x86_64
+          profile: pixel_6
+          emulator-options: -no-window -gpu swiftshader_indirect -noaudio -no-boot-anim -camera-back none
+          script: bash scripts/device-check.sh
+
+      - name: Push the screenshots
+        if: always()
+        run: |
+          mkdir -p device-shots && cd device-shots
+          echo "$GITHUB_SHA" > SOURCE_COMMIT
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -b device-check
+          git add -A
+          git commit -qm "Device check for ${GITHUB_SHA::7}"
+          git push -fq "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" device-check

@@ -15,7 +15,8 @@ export const platform = Capacitor.getPlatform();
 /** Our own Android plugin (android/app/src/main/java/com/batwara/app/BatwaraSystemPlugin.java). */
 const System = registerPlugin('BatwaraSystem', {
   web: () => ({
-    insets: async () => ({ top: 0, bottom: 0, fontScale: 1 }),
+    insets: async () => ({ top: 0, bottom: 0, fontScale: 1, dark: null }),
+    addListener: async () => ({ remove: async () => {} }),
     upiApps: async () => ({ apps: [] }),
     upiPay: async ({ url }) => {
       window.location.href = url;
@@ -54,6 +55,14 @@ export async function setupSystemBars() {
   await refreshInsets();
 }
 
+/** null until the phone tells us; the browser build relies on prefers-color-scheme instead. */
+export let nativeDark = null;
+
+function applyFontScale(fontScale) {
+  // Follow the phone's text size, within limits the layout can take.
+  document.documentElement.style.fontSize = `${16 * Math.min(1.3, Math.max(0.85, fontScale || 1))}px`;
+}
+
 export async function refreshInsets() {
   const root = document.documentElement;
   let fontScale = 1;
@@ -63,10 +72,21 @@ export async function refreshInsets() {
       if (r.top > 0) root.style.setProperty('--sat', `${r.top}px`);
       if (r.bottom >= 0) root.style.setProperty('--sab', `${r.bottom}px`);
       fontScale = r.fontScale || 1;
+      if (typeof r.dark === 'boolean') nativeDark = r.dark;
     } catch { /* keep CSS fallbacks */ }
   }
-  // Follow the phone's text size, within limits the layout can take.
-  root.style.fontSize = `${16 * Math.min(1.3, Math.max(0.85, fontScale))}px`;
+  applyFontScale(fontScale);
+}
+
+/** Dark mode or text size changed in Android settings while the app was open. */
+export function onSystemChange(cb) {
+  if (!isNative) return () => {};
+  const p = System.addListener('systemChange', (d) => {
+    if (typeof d.dark === 'boolean') nativeDark = d.dark;
+    if (d.fontScale) applyFontScale(d.fontScale);
+    cb(d);
+  });
+  return () => p.then((h) => h.remove());
 }
 
 /** lightContent = white status-bar icons (dark backgrounds, or while a sheet is up). */

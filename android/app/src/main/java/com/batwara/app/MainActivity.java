@@ -12,9 +12,19 @@ public class MainActivity extends BridgeActivity {
         registerPlugin(BatwaraSystemPlugin.class);
         super.onCreate(savedInstanceState);
         // Match the app background before the web layer paints, so dark mode doesn't flash white.
-        int night = getResources().getConfiguration().uiMode & Configuration.UI_MODE_NIGHT_MASK;
+        paintBackground(getResources().getConfiguration());
+    }
+
+    @Override
+    public void onConfigurationChanged(Configuration newConfig) {
+        super.onConfigurationChanged(newConfig);
+        paintBackground(newConfig);
+    }
+
+    private void paintBackground(Configuration config) {
+        boolean night = (config.uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
         if (getBridge() != null && getBridge().getWebView() != null) {
-            getBridge().getWebView().setBackgroundColor(night == Configuration.UI_MODE_NIGHT_YES ? Color.BLACK : Color.parseColor("#F2F2F7"));
+            getBridge().getWebView().setBackgroundColor(night ? Color.BLACK : Color.parseColor("#F2F2F7"));
         }
     }
 }

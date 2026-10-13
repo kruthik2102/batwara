@@ -5,6 +5,7 @@ import android.content.ActivityNotFoundException;
 import android.content.Intent;
 import android.content.pm.PackageManager;
 import android.content.pm.ResolveInfo;
+import android.content.res.Configuration;
 import android.database.Cursor;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
@@ -61,8 +62,22 @@ public class BatwaraSystemPlugin extends Plugin {
             ret.put("top", top / density);
             ret.put("bottom", 0);
             ret.put("fontScale", getContext().getResources().getConfiguration().fontScale);
+            ret.put("dark", isNight(getContext().getResources().getConfiguration()));
             call.resolve(ret);
         });
+    }
+
+    private static boolean isNight(Configuration c) {
+        return (c.uiMode & Configuration.UI_MODE_NIGHT_MASK) == Configuration.UI_MODE_NIGHT_YES;
+    }
+
+    /** The activity handles uiMode changes itself, so tell the web layer when dark mode flips. */
+    @Override
+    protected void handleOnConfigurationChanged(Configuration newConfig) {
+        JSObject data = new JSObject();
+        data.put("dark", isNight(newConfig));
+        data.put("fontScale", newConfig.fontScale);
+        notifyListeners("systemChange", data);
     }
 
     @PluginMethod
