@@ -1,0 +1,23 @@
+{
+  "appId": "com.batwara.app",
+  "appName": "Batwara",
+  "webDir": "dist",
+  "backgroundColor": "#F2F2F7",
+  "android": {
+    "allowMixedContent": false
+  },
+  "plugins": {
+    "Keyboard": {
+      "resizeOnFullScreen": true
+    },
+    "StatusBar": {
+      "overlaysWebView": true,
+      "style": "DEFAULT",
+      "backgroundColor": "#00000000"
+    },
+    "LocalNotifications": {
+      "smallIcon": "ic_stat_batwara",
+      "iconColor": "#5856D6"
+    }
+  }
+}

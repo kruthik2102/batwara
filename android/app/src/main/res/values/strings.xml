@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Batwara</string>
+    <string name="title_activity_main">Batwara</string>
+    <string name="package_name">com.batwara.app</string>
+    <string name="custom_url_scheme">com.batwara.app</string>
+</resources>

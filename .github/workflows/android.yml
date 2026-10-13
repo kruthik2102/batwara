@@ -1,0 +1,98 @@
+name: Build Android APK
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: apk-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  apk:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: 17
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Unit tests
+        run: npm test
+
+      - name: Build the web app
+        run: npm run build
+        env:
+          APP_VERSION: 1.0.${{ github.run_number }}
+
+      - name: Copy the web app into the Android project
+        run: npx cap sync android
+
+      - name: Build the APK
+        working-directory: android
+        run: |
+          chmod +x gradlew
+          set -o pipefail
+          ./gradlew assembleRelease --no-daemon --stacktrace 2>&1 | tee ../gradle.log
+
+      - name: Collect the APK
+        run: |
+          mkdir -p out
+          cp android/app/build/outputs/apk/release/app-release.apk out/batwara.apk
+          ls -la out
+
+      - uses: actions/upload-artifact@v4
+        with:
+          name: batwara-apk-${{ github.run_number }}
+          path: out/batwara.apk
+
+      - name: Publish as the "latest" release
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release delete latest --yes --cleanup-tag || true
+          gh release create latest out/batwara.apk \
+            --title "Batwara build ${{ github.run_number }}" \
+            --notes "Built from ${GITHUB_SHA::7}. Download batwara.apk on an Android phone (Android 7 or later) and open it to install." \
+            --prerelease --target "$GITHUB_SHA"
+
+      - name: Also push the APK to the apk branch
+        run: |
+          cd out
+          echo "$GITHUB_SHA" > SOURCE_COMMIT
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -b apk
+          git add -A
+          git commit -qm "APK for ${GITHUB_SHA::7} (build ${{ github.run_number }})"
+          git push -fq "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" apk
+
+      - name: Push the build log when something fails
+        if: failure()
+        run: |
+          mkdir -p logs && cd logs
+          cp ../gradle.log . 2>/dev/null || echo "Gradle did not run" > gradle.log
+          echo "$GITHUB_SHA" > SOURCE_COMMIT
+          git init -q
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -q -b ci-log
+          git add -A
+          git commit -qm "Build log for ${GITHUB_SHA::7}"
+          git push -fq "https://x-access-token:${{ github.token }}@github.com/${{ github.repository }}.git" ci-log
