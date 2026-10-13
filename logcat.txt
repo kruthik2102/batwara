@@ -1,0 +1,400 @@
+10-13 21:24:58.740 D/CoreBackPreview(  539): Window{610dfdc u0 Splash Screen com.batwara.app EXITING}: Setting back callback null
+10-13 21:24:58.741 W/InputManager-JNI(  539): Input channel object '610dfdc Splash Screen com.batwara.app (client)' was disposed without first being removed with the input manager!
+10-13 21:24:59.076 W/com.batwara.app( 3568): Long monitor contention with owner ThreadPoolForeg (3726) at java.lang.Object libcore.content.type.MimeMap$MemoizingSupplier.get()(MimeMap.java:475) waiters=0 in java.lang.Object libcore.content.type.MimeMap$MemoizingSupplier.get() for 564ms
+10-13 21:24:59.182 I/ImeTracker(  539): com.batwara.app:edcea1c0: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-13 21:24:59.182 I/ImeTracker(  539): com.batwara.app:edcea1c0: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:24:59.204 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, false)
+10-13 21:24:59.813 D/SystemServerTimingAsync(  539): ssm.onCompletedEventUser-0_{|Unlocked|}_com.android.server.webkit.WebViewUpdateService
+10-13 21:24:59.813 V/SystemServerTimingAsync(  539): ssm.onCompletedEventUser-0_{|Unlocked|}_com.android.server.webkit.WebViewUpdateService took to complete: 0ms
+10-13 21:25:00.932 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{6340b8b com.google.android.gm/10140} BLOCKED
+10-13 21:25:03.418 I/AiAiEcho( 1768): AppFetcherImplV2 updateApps package:[com.batwara.app], userId:[0], reason:[package is added.].
+10-13 21:25:03.431 I/AiAiEcho( 1768): AppFetcherImpl onPackageChanged com.batwara.app.
+10-13 21:25:03.433 I/AiAiEcho( 1768): AppIndexer Package:[com.batwara.app] UserProfile:[0] Enabled:[true].
+10-13 21:25:03.433 I/AiAiEcho( 1768): AppFetcherImplV2 updateApps package:[com.batwara.app], userId:[0], reason:[package is updated.].
+10-13 21:25:03.449 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{67f2574 com.google.android.settings.intelligence/10119} BLOCKED
+10-13 21:25:03.452 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{bde450d com.google.android.settings.intelligence/10119} BLOCKED
+10-13 21:25:03.813 D/ProfileInstaller( 3568): Installing profile for com.batwara.app
+10-13 21:25:03.899 I/BlockstoreStorage( 1557): Clearing Blockstore Data for package com.batwara.app [CONTEXT service_id=258 ]
+10-13 21:25:04.026 I/FontLog ( 1512): Package com.batwara.app has no metadata [CONTEXT service_id=132 ]
+10-13 21:25:04.061 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{8ffcfa6 com.google.android.googlequicksearchbox/10132} BLOCKED
+10-13 21:25:04.061 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{6942de7 com.android.camera2/10143} BLOCKED
+10-13 21:25:04.061 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{abe1d94 com.google.android.gm/10140} BLOCKED
+10-13 21:25:04.061 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{46de03d com.google.android.devicelockcontroller/10187} BLOCKED
+10-13 21:25:04.062 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{9494032 com.google.android.rkpdapp/10176} BLOCKED
+10-13 21:25:04.062 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{83fa2ca com.google.android.projection.gearhead/10123} BLOCKED
+10-13 21:25:04.623 D/PrefCtrlListHelper( 1098): Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController
+10-13 21:25:05.383 I/ImeTracker( 3568): com.batwara.app:632353b4: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-13 21:25:05.390 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x4003(Phone) imeOptions=0x12000002 privateImeOptions=null actionName=GO actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, true)
+10-13 21:25:05.405 D/InputMethodManager( 3568): showSoftInput() view=com.getcapacitor.CapacitorWebView{716dd0c VFEDHVC.. .F...... 0,0-1080,2337 #7f0800bf app:id/webview aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-13 21:25:05.432 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x4003(Phone) imeOptions=0x12000002 privateImeOptions=null actionName=GO actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, false)
+10-13 21:25:05.605 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@32e90e7, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:07.430 I/ImeTracker( 3568): com.batwara.app:632353b4: onShown
+10-13 21:25:08.332 I/ImeTracker( 3568): com.batwara.app:538cdba6: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+10-13 21:25:08.350 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:25:08.351 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@b6192b, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:08.427 I/ImeTracker( 3568): com.batwara.app:8509e353: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+10-13 21:25:08.428 I/ImeTracker(  539): com.batwara.app:8509e353: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:25:08.429 I/ImeTracker( 3568): com.batwara.app:538cdba6: onHidden
+10-13 21:25:08.767 I/ImeTracker( 3568): com.batwara.app:75316a21: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-13 21:25:08.767 D/InputMethodManager( 3568): showSoftInput() view=com.getcapacitor.CapacitorWebView{716dd0c VFEDHVC.. .F...... 0,0-1080,2337 #7f0800bf app:id/webview aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-13 21:25:08.777 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x4002(Number) imeOptions=0x12000002 privateImeOptions=null actionName=GO actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, true)
+10-13 21:25:08.815 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x4002(Number) imeOptions=0x12000002 privateImeOptions=null actionName=GO actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, false)
+10-13 21:25:08.965 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@6f6964f, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:09.009 I/ImeTracker( 3568): com.batwara.app:75316a21: onShown
+10-13 21:25:09.133 D/ActivityManager(  539): freezing 3825 com.google.android.webview:webview_apk
+10-13 21:25:09.178 W/FrameTracker( 3568): Missed App frame:UNKNOWN: 88, 7008, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@com.batwara.app>
+10-13 21:25:09.180 W/FrameTracker( 3568): Missed SF frame:UNKNOWN: 88, 7008, 0, CUJ=J<IME_INSETS_ANIMATION::1@1@com.batwara.app>
+10-13 21:25:09.499 D/ActivityManager(  539): freezing 3396 com.google.android.webview:webview_service
+10-13 21:25:12.701 I/ImeTracker( 3568): com.batwara.app:5063672b: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+10-13 21:25:12.705 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:25:12.706 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@58d343, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:12.761 I/ImeTracker( 3568): com.batwara.app:85a4af03: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+10-13 21:25:12.761 I/ImeTracker(  539): com.batwara.app:85a4af03: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:25:12.761 I/ImeTracker( 3568): com.batwara.app:5063672b: onHidden
+10-13 21:25:13.240 W/FrameTracker( 3568): Missed App frame:UNKNOWN: 72, 7139, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@com.batwara.app>
+10-13 21:25:13.553 I/ImeTracker( 3568): com.batwara.app:60984a1c: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-13 21:25:13.553 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0xc0a1(WebEditText) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, true)
+10-13 21:25:13.561 D/InputMethodManager( 3568): showSoftInput() view=com.getcapacitor.CapacitorWebView{716dd0c VFEDHVC.. .F...... 0,0-1080,2337 #7f0800bf app:id/webview aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-13 21:25:13.585 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0xc0a1(WebEditText) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, false)
+10-13 21:25:13.889 I/AndroidIME( 1646): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0xc0a1(WebEditText) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null, IncognitoMode = false, DeviceLocked = false
+10-13 21:25:13.936 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@3905bc4, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:14.124 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{baf3c0 com.google.android.apps.messaging/10131} BLOCKED
+10-13 21:25:14.124 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{c5e78f9 com.google.android.settings.intelligence/10119} BLOCKED
+10-13 21:25:14.138 I/ImeTracker( 3568): com.batwara.app:60984a1c: onShown
+10-13 21:25:14.605 W/FrameTracker( 3568): Missed App frame:UNKNOWN: 74, 8464, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@com.batwara.app>
+10-13 21:25:14.611 W/FrameTracker( 3568): Missed SF frame:UNKNOWN: 74, 8464, 0, CUJ=J<IME_INSETS_ANIMATION::0@1@com.batwara.app>
+10-13 21:25:15.243 I/ImeTracker( 3568): com.batwara.app:ecf0f70: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+10-13 21:25:15.337 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:25:15.880 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@66da55c, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:15.980 I/ImeTracker( 3568): com.batwara.app:be2aa6f5: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+10-13 21:25:15.986 I/ImeTracker(  539): com.batwara.app:be2aa6f5: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:25:15.986 I/ImeTracker( 3568): com.batwara.app:ecf0f70: onHidden
+10-13 21:25:17.898 E/FrameTracker( 3568): force finish cuj, time out: J<IME_INSETS_ANIMATION::0@1@com.batwara.app>
+10-13 21:25:23.888 E/FrameTracker( 3568): force finish cuj, time out: J<IME_INSETS_ANIMATION::1@1@com.batwara.app>
+10-13 21:25:24.265 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{ae8fb0b com.google.android.googlequicksearchbox/10132} BLOCKED
+10-13 21:25:24.265 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{7326de8 com.google.android.apps.messaging/10131} BLOCKED
+10-13 21:25:24.265 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{765ac01 com.google.android.as/10127} BLOCKED
+10-13 21:25:24.948 I/cr_CronetUrlRequestContext( 4714): destroyNativeStreamLocked org.chromium.net.impl.CronetBidirectionalStream@fe481b8
+10-13 21:25:27.835 E/FrameTracker( 3568): force finish cuj, time out: J<IME_INSETS_ANIMATION::1@1@com.batwara.app>
+10-13 21:25:31.935 D/PrefCtrlListHelper( 1098): Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController
+10-13 21:25:32.007 D/PrefCtrlListHelper( 1098): Could not find Context-only controller for pref: com.android.settings.deviceinfo.legal.WebViewLicensePreferenceController
+10-13 21:25:32.036 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{9ac58c9 com.google.android.settings.intelligence/10119} BLOCKED
+10-13 21:25:33.210 I/ActivityManager(  539): Start proc 5563:com.google.android.webview/u0a134 for broadcast {com.google.android.webview/com.google.android.libraries.phenotype.client.stable.PhenotypeUpdateBackgroundBroadcastReceiver}
+10-13 21:25:33.276 I/android.webview( 5563): Using CollectorTypeCC GC.
+10-13 21:25:33.279 W/android.webview( 5563): Unexpected CPU variant for x86: x86_64.
+10-13 21:25:33.279 W/android.webview( 5563): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-13 21:25:33.284 E/android.webview( 5563): Not starting debugger since process cannot load the jdwp agent.
+10-13 21:25:33.320 W/android.webview( 5563): Entry not found
+10-13 21:25:33.324 D/nativeloader( 5563): Configuring clns-6 for other apk /data/app/~~zPB2BgejmE0SvjV8dCZ69w==/com.google.android.trichromelibrary_567263637-rf4JTlfREC_6AiYnjoZDPQ==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/lib/x86_64:/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~zPB2BgejmE0SvjV8dCZ69w==/com.google.android.trichromelibrary_567263637-rf4JTlfREC_6AiYnjoZDPQ==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+10-13 21:25:33.335 D/nativeloader( 5563): Configuring clns-7 for other apk /data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/lib/x86_64:/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~zPB2BgejmE0SvjV8dCZ69w==/com.google.android.trichromelibrary_567263637-rf4JTlfREC_6AiYnjoZDPQ==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.google.android.webview
+10-13 21:25:33.358 V/GraphicsEnvironment( 5563): ANGLE GameManagerService for com.google.android.webview: false
+10-13 21:25:33.358 V/GraphicsEnvironment( 5563): com.google.android.webview is not listed in per-application setting
+10-13 21:25:33.363 I/cr_WebViewApkApp( 5563): Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview
+10-13 21:25:35.755 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{e7a22c9 com.google.android.youtube/10138} BLOCKED
+10-13 21:25:35.755 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{1103dce com.google.android.apps.messaging/10131} BLOCKED
+10-13 21:25:35.755 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{21344ef com.google.android.gm/10140} BLOCKED
+10-13 21:25:35.755 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{81427c6 com.google.android.apps.maps/10152} BLOCKED
+10-13 21:25:37.474 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{87f4d65 com.google.android.as/10127} BLOCKED
+10-13 21:25:40.848 W/com.batwara.app( 3568): Accessing hidden method Landroid/view/MotionEvent;->getEventTimeNano()J (unsupported, reflection, allowed)
+10-13 21:25:43.369 D/ActivityManager(  539): freezing 5563 com.google.android.webview
+10-13 21:25:44.535 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:44.536 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:44.552 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:44.553 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:44.553 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:45.699 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0xc0a1(WebEditText) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, true)
+10-13 21:25:45.701 I/ImeTracker( 3568): com.batwara.app:54a53ca2: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-13 21:25:45.701 D/InputMethodManager( 3568): showSoftInput() view=com.getcapacitor.CapacitorWebView{716dd0c VFEDHVC.. .F...... 0,0-1080,2337 #7f0800bf app:id/webview aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-13 21:25:45.704 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0xc0a1(WebEditText) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, false)
+10-13 21:25:45.719 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:45.730 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:46.275 I/AndroidIME( 1646): AbstractIme.onActivate():86 LatinIme.onActivate() : EditorInfo = inputType=0xc0a1(WebEditText) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=0 initialSelEnd=0 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null, IncognitoMode = false, DeviceLocked = false
+10-13 21:25:46.318 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:46.336 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:46.977 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:46.979 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:47.491 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@af5392, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:47.524 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:47.538 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:47.561 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:47.575 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:47.578 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:48.047 I/ImeTracker( 3568): com.batwara.app:54a53ca2: onShown
+10-13 21:25:48.088 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:48.088 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:48.420 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:48.423 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:48.929 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:48.931 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:50.784 I/ImeTracker(  539): com.batwara.app:c1eeda18: onRequestShow at ORIGIN_SERVER_START_INPUT reason ATTACH_NEW_INPUT
+10-13 21:25:50.788 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x6002(Number) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=21 initialSelEnd=21 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, true)
+10-13 21:25:50.788 I/ImeTracker( 3568): com.batwara.app:c969bab8: onRequestShow at ORIGIN_CLIENT_SHOW_SOFT_INPUT reason SHOW_SOFT_INPUT
+10-13 21:25:50.789 D/InputMethodManager( 3568): showSoftInput() view=com.getcapacitor.CapacitorWebView{716dd0c VFEDHVC.. .F...... 0,0-1080,1517 #7f0800bf app:id/webview aid=1073741824} flags=0 reason=SHOW_SOFT_INPUT
+10-13 21:25:50.800 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInputView():1995 onStartInputView(EditorInfo{inputType=0x6002(Number) imeOptions=0x12000005 privateImeOptions=null actionName=NEXT actionLabel=null actionId=0 initialSelStart=21 initialSelEnd=21 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=2131230911 fieldName=null extras=null}, true)
+10-13 21:25:50.826 I/ImeTracker(  539): com.batwara.app:c1eeda18: onFailed at PHASE_WM_SHOW_IME_RUNNER
+10-13 21:25:50.955 I/ImeTracker( 3568): com.batwara.app:c969bab8: onCancelled at PHASE_CLIENT_APPLY_ANIMATION
+10-13 21:25:53.032 I/ImeTracker( 3568): com.batwara.app:9dbe2e8b: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT
+10-13 21:25:53.037 D/CoreBackPreview(  539): Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@ef832f, mPriority=0, mIsAnimationCallback=false}
+10-13 21:25:53.039 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:25:53.176 I/ImeTracker( 3568): com.batwara.app:34d67782: onRequestHide at ORIGIN_CLIENT_HIDE_SOFT_INPUT reason HIDE_SOFT_INPUT_BY_INSETS_API
+10-13 21:25:53.177 I/ImeTracker(  539): com.batwara.app:34d67782: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:25:53.177 I/ImeTracker( 3568): com.batwara.app:9dbe2e8b: onHidden
+10-13 21:25:53.445 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:53.450 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:53.453 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:25:53.513 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:00.345 E/FrameTracker( 3568): force finish cuj, time out: J<IME_INSETS_ANIMATION::0@1@com.batwara.app>
+10-13 21:26:00.619 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:00.620 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:00.774 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:00.778 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:01.220 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:01.221 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:01.222 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:01.785 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:01.790 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:02.003 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:02.004 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:04.655 E/FrameTracker( 3568): force finish cuj, time out: J<IME_INSETS_ANIMATION::1@1@com.batwara.app>
+10-13 21:26:06.427 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.430 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.434 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.435 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.453 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.457 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.783 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:06.784 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:10.722 I/AppsFilter(  539): interaction: PackageSetting{a171b32 com.batwara.app/10192} -> PackageSetting{848529b com.google.android.googlequicksearchbox/10132} BLOCKED
+10-13 21:26:11.817 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:11.817 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:12.637 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:12.646 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:13.075 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:13.075 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:13.105 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:13.300 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:13.345 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:13.350 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.020 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.023 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.039 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.042 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.043 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.061 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.061 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.497 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:15.497 E/chromium( 3712): [ERROR:tile_manager.cc(835)] WARNING: tile memory limits exceeded, some content may not draw
+10-13 21:26:22.630 V/WindowManagerShell(  877): Transition requested: android.os.BinderProxy@c1ad121 TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.batwara.app/.MainActivity } baseActivity=ComponentInfo{com.batwara.app/com.batwara.app.MainActivity} topActivity=ComponentInfo{com.android.intentresolver/com.android.intentresolver.ChooserActivity} origActivity=null realActivity=ComponentInfo{com.batwara.app/com.batwara.app.MainActivity} numActivities=2 lastActiveTime=127355 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@3a94946} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{58bb707 com.android.intentresolver.ChooserActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-13 21:26:23.254 V/WindowManager(  539): Sent Transition #8 createdAt=10-13 21:26:22.613 via request=TransitionRequestInfo { type = OPEN, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=true baseIntent=Intent { flg=0x10000000 cmp=com.batwara.app/.MainActivity } baseActivity=ComponentInfo{com.batwara.app/com.batwara.app.MainActivity} topActivity=ComponentInfo{com.android.intentresolver/com.android.intentresolver.ChooserActivity} origActivity=null realActivity=ComponentInfo{com.batwara.app/com.batwara.app.MainActivity} numActivities=2 lastActiveTime=127355 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{50cbfaa Task{9c0b71c #8 type=standard A=10192:com.batwara.app}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=ActivityInfo{4684acf com.android.intentresolver.ChooserActivity} launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-13 21:26:27.581 I/ImeTracker(  539): com.batwara.app:ae12c284: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-13 21:26:27.581 I/ImeTracker(  539): com.batwara.app:ae12c284: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:26:27.589 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, false)
+10-13 21:26:30.831 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:26:30.852 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:26:30.888 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:26:37.337 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:26:37.393 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:26:37.545 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, true)
+10-13 21:26:39.388 I/ActivityManager(  539): Force stopping com.batwara.app appid=10192 user=0: from pid 7215
+10-13 21:26:39.390 I/ActivityManager(  539): Killing 3568:com.batwara.app/u0a192 (adj 0): stop com.batwara.app due to from pid 7215
+10-13 21:26:39.392 I/ActivityManager(  539): Killing 6935:com.android.intentresolver/u0a93 (adj 905): depends on provider com.batwara.app/androidx.core.content.FileProvider in dying proc com.batwara.app (adj -10000)
+10-13 21:26:39.392 I/ActivityManager(  539): Killing 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0 (adj 0): isolated not needed
+10-13 21:26:39.396 W/ActivityTaskManager(  539): Force removing ActivityRecord{289ff6d u0 com.batwara.app/.MainActivity t8 f}}: app died, no saved state
+10-13 21:26:39.396 V/WindowManagerShell(  877): Transition requested: android.os.BinderProxy@5602d21 TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.batwara.app/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.batwara.app/com.batwara.app.MainActivity} numActivities=0 lastActiveTime=132247 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{android.window.IWindowContainerToken$Stub$Proxy@397546} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-13 21:26:39.442 W/WindowManager(  539): Failed to deliver inset control state change to w=Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}
+10-13 21:26:39.442 I/ImeTracker(  539): com.batwara.app:aa5d0a83: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_REMOVE_CLIENT
+10-13 21:26:39.446 I/ImeTracker(  539): com.batwara.app:aa5d0a83: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:26:39.457 I/WindowManager(  539): WIN DEATH: Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity}
+10-13 21:26:39.457 W/InputManager-JNI(  539): Input channel object 'd959384 com.batwara.app/com.batwara.app.MainActivity (client)' was disposed without first being removed with the input manager!
+10-13 21:26:39.464 V/ActivityManager(  539): Got obituary of 3568:com.batwara.app
+10-13 21:26:39.496 D/CarrierSvcBindHelper( 1097): onHandleForceStop: [com.batwara.app]
+10-13 21:26:39.591 D/nativeloader(  539): Configuring clns-18 for other apk . target_sdk_version=34, uses_libraries=, library_path=/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/lib/x86_64, permitted_path=/data:/mnt/expand
+10-13 21:26:39.595 V/SplashScreenExceptionList(  539): SplashScreen checking exception for package com.batwara.app (target sdk:34) -> false
+10-13 21:26:39.596 I/ActivityTaskManager(  539): Add Task{9c0b71c #8 type=standard A=10192:com.batwara.app} to hidden list because adding Task{be94fc6 #9 type=standard A=10192:com.batwara.app}
+10-13 21:26:39.600 I/ActivityTaskManager(  539): START u0 {flg=0x10000000 cmp=com.batwara.app/.MainActivity} with LAUNCH_SINGLE_TASK from uid 2000 (BAL_ALLOW_PERMISSION) result code=0
+10-13 21:26:39.611 I/ActivityManager(  539): Start proc 7238:com.batwara.app/u0a192 for next-top-activity {com.batwara.app/com.batwara.app.MainActivity}
+10-13 21:26:39.638 I/com.batwara.app( 7238): Late-enabling -Xcheck:jni
+10-13 21:26:39.656 I/com.batwara.app( 7238): Using CollectorTypeCC GC.
+10-13 21:26:39.657 W/com.batwara.app( 7238): Unexpected CPU variant for x86: x86_64.
+10-13 21:26:39.657 W/com.batwara.app( 7238): Known variants: atom, sandybridge, silvermont, goldmont, goldmont-plus, tremont, kabylake, default
+10-13 21:26:39.680 D/CoreBackPreview(  539): Window{384923 u0 Splash Screen com.batwara.app}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@51723d9, mPriority=0, mIsAnimationCallback=false}
+10-13 21:26:39.741 W/ziparchive( 7238): Unable to open '/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/base.dm': No such file or directory
+10-13 21:26:39.741 W/ziparchive( 7238): Unable to open '/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/base.dm': No such file or directory
+10-13 21:26:39.890 D/nativeloader( 7238): Configuring clns-6 for other apk /data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/base.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/lib/x86_64, permitted_path=/data:/mnt/expand:/data/user/0/com.batwara.app
+10-13 21:26:39.911 V/GraphicsEnvironment( 7238): ANGLE GameManagerService for com.batwara.app: false
+10-13 21:26:39.911 V/GraphicsEnvironment( 7238): com.batwara.app is not listed in per-application setting
+10-13 21:26:40.331 W/WindowManager(  539): Failed to deliver inset control state change to w=Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity EXITING}
+10-13 21:26:40.334 V/WindowManager(  539): Sent Transition #12 createdAt=10-13 21:26:39.396 via request=TransitionRequestInfo { type = CLOSE, triggerTask = TaskInfo{userId=0 taskId=8 displayId=0 isRunning=false baseIntent=Intent { flg=0x10000000 cmp=com.batwara.app/.MainActivity } baseActivity=null topActivity=null origActivity=null realActivity=ComponentInfo{com.batwara.app/com.batwara.app.MainActivity} numActivities=0 lastActiveTime=132247 supportsMultiWindow=true resizeMode=1 isResizeable=true minWidth=-1 minHeight=-1 defaultMinSize=220 token=WCT{RemoteToken{50cbfaa Task{9c0b71c #8 type=standard A=10192:com.batwara.app}}} topActivityType=1 pictureInPictureParams=null shouldDockBigOverlays=false launchIntoPipHostTaskId=-1 lastParentTaskIdBeforePip=-1 displayCutoutSafeInsets=null topActivityInfo=null launchCookies=[] positionInParent=Point(0, 0) parentTaskId=-1 isFocused=true isVisible=true isVisibleRequested=true isSleeping=false topActivityInSizeCompat=false topActivityEligibleForLetterboxEducation= false topActivityLetterboxed= false isFromDoubleTap= false topActivityLetterboxVerticalPosition= -1 topActivityLetterboxHorizontalPosition= -1 topActivityLetterboxWidth=-1 topActivityLetterboxHeight=-1 locusId=null displayAreaFeatureId=1 cameraCompatControlState=hidden}, remoteTransition = null, displayChange = null }
+10-13 21:26:40.334 V/WindowManager(  539):     info={id=12 t=CLOSE f=0x0 trk=0 r=[0@Point(0, 0)] c=[{WCT{RemoteToken{79b4967 Task{be94fc6 #9 type=standard A=10192:com.batwara.app}}} m=OPEN f=MOVE_TO_TOP leash=Surface(name=Task=9)/@0xfb9868 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0},{WCT{RemoteToken{50cbfaa Task{9c0b71c #8 type=standard A=10192:com.batwara.app}}} m=CLOSE f=NONE leash=Surface(name=Task=8)/@0x7a1b987 sb=Rect(0, 0 - 1080, 2400) eb=Rect(0, 0 - 1080, 2400) d=0}]}
+10-13 21:26:40.374 W/WindowManager(  539): Exception thrown during dispatchAppVisibility Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity EXITING}
+10-13 21:26:40.386 W/WindowManager(  539): Failed to deliver inset control state change to w=Window{d959384 u0 com.batwara.app/com.batwara.app.MainActivity EXITING}
+10-13 21:26:40.425 W/com.batwara.app( 7238): Accessing hidden method Landroid/view/View;->computeFitSystemWindows(Landroid/graphics/Rect;Landroid/graphics/Rect;)Z (unsupported, reflection, allowed)
+10-13 21:26:40.425 W/com.batwara.app( 7238): Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (unsupported, reflection, allowed)
+10-13 21:26:40.432 I/WebViewFactory( 7238): Loading com.google.android.webview version 113.0.5672.136 (code 567263637)
+10-13 21:26:40.434 W/com.batwara.app( 7238): Entry not found
+10-13 21:26:40.436 D/nativeloader( 7238): Configuring clns-7 for other apk /data/app/~~zPB2BgejmE0SvjV8dCZ69w==/com.google.android.trichromelibrary_567263637-rf4JTlfREC_6AiYnjoZDPQ==/TrichromeLibrary.apk. target_sdk_version=34, uses_libraries=ALL, library_path=/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/lib/x86_64:/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~zPB2BgejmE0SvjV8dCZ69w==/com.google.android.trichromelibrary_567263637-rf4JTlfREC_6AiYnjoZDPQ==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{cc0083 com.android.cts.priv.ctsshim/10179} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{e7a22c9 com.google.android.youtube/10138} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8bd1a39 com.android.internal.display.cutout.emulation.corner/10023} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{797b87e com.android.internal.display.cutout.emulation.double/10048} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{848529b com.google.android.googlequicksearchbox/10132} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{1ce8e2c com.google.android.onetimeinitializer/10125} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{64c20f5 com.google.android.ext.shared/10100} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2f2de8a com.android.internal.systemui.navbar.gestural_wide_back/10009} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9f2fcfb com.android.virtualmachine.res/10191} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{aac6118 com.google.android.federatedcompute/10185} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{18ad771 com.android.managedprovisioning.auto_generated_rro_product__/10022} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8285956 com.android.carrierconfig.auto_generated_rro_vendor__/10078} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2ea6dd7 com.android.systemui.emulation.pixel_3_xl/10035} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{69276c4 com.android.systemui.emulation.pixel_4_xl/10059} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{c2479ad com.android.systemui.emulation.pixel_fold/10008} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{168b4e2 com.android.simappdialog.auto_generated_rro_product__/10032} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{97e1073 com.android.htmlviewer/10114} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{fa23b30 com.google.android.health.connect.backuprestore/10182} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d3c03a9 com.android.systemui.auto_generated_rro_product__/10028} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{1103dce com.google.android.apps.messaging/10131} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{e9f40cf com.google.android.soundpicker/10137} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ea7da5c com.google.android.marvin.talkbackoverlay/10077} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{1283165 com.google.android.configupdater/10129} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{647fe3a com.android.internal.emulation.pixel_3a_xl/10047} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{6f91aeb com.android.internal.emulation.pixel_6_pro/10017} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{b064048 com.android.internal.emulation.pixel_7_pro/10002} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8ef7ee1 com.android.internal.emulation.pixel_8_pro/10058} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9a7c406 com.android.internal.emulation.pixel_3a/10053} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ccc7ac7 com.android.internal.emulation.pixel_4a/10013} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d6318f4 com.android.internal.emulation.pixel_6a/10031} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{584281d com.android.internal.emulation.pixel_7a/10030} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ec1a92 com.google.android.overlay.googlewebview/10049} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{38bfc63 com.google.android.hotspot2.osulogin/10174} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{112d060 com.android.simappdialog/10112} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ac02919 com.android.internal.display.cutout.emulation.hole/10073} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2ad4dde com.android.internal.display.cutout.emulation.tall/10065} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{937fbbf com.android.internal.systemui.navbar.threebutton/10068} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{6942de7 com.android.camera2/10143} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{6213dd5 com.android.systemui.auto_generated_rro_vendor__/10076} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{4bc69ea com.google.android.deskclock/10153} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{17a94db com.android.internal.systemui.navbar.twobutton/10021} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{87f4d65 com.google.android.as/10127} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{21344ef com.google.android.gm/10140} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{6ef3ab6 com.android.internal.systemui.navbar.gestural_extra_wide_back/10045} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{683a3b7 com.android.systemui.emulation.pixel_3/10014} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{878a724 com.android.systemui.emulation.pixel_4/10037} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{824528d com.android.systemui.emulation.pixel_5/10071} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{eac4c42 com.android.systemui.emulation.pixel_6/10074} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ba4c453 com.android.systemui.emulation.pixel_7/10072} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{42b1190 com.android.systemui.emulation.pixel_8/10070} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{b108a89 com.android.nfc.auto_generated_rro_product__/10026} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{f36ea8e com.android.printspooler/10105} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{dad52af com.android.emergency.auto_generated_rro_product__/10041} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{457b6bc com.google.android.connectivity.resources.goldfish.overlay/10081} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{46e4645 com.android.dreams.basic/10103} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{abb219a com.google.android.networkstack.tethering.emulator/10025} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d066acb com.android.providers.settings.auto_generated_rro_product__/10000} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{44782a8 com.google.android.as.oss/10122} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{23201c1 com.android.traceur.auto_generated_rro_product__/10003} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{46de03d com.google.android.devicelockcontroller/10187} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d8ee8a7 com.google.android.dialer/10128} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8e62154 com.android.internal.emulation.pixel_3/10046} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{31bf8fd com.android.internal.emulation.pixel_4/10060} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{97449f2 com.android.internal.emulation.pixel_5/10010} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8376843 com.android.internal.emulation.pixel_6/10038} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{82dfec0 com.android.internal.emulation.pixel_7/10067} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{7b427f9 com.android.internal.emulation.pixel_8/10039} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{f79133e com.google.android.captiveportallogin/10115} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{a5e459f com.android.musicfx/10088} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{b5446ec com.google.android.apps.docs/10155} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{81427c6 com.google.android.apps.maps/10152} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{7064ab5 com.google.android.modulemetadata/10147} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{56f254a com.google.android.markup/10135} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{eeb9cbb com.android.providers.settings.auto_generated_rro_vendor__/10079} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9494032 com.google.android.rkpdapp/10176} BLOCKED
+10-13 21:26:40.439 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{31ddd31 com.android.server.telecom.auto_generated_rro_product__/10029} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2024c16 com.google.android.overlay.googleconfig/10055} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d2d4997 com.android.chrome/10150} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{a7e8784 com.android.bips.auto_generated_rro_product__/10034} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9421b6d com.google.android.apps.customization.pixel/10144} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8cf13a2 com.google.android.tag/10082} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{972e833 com.google.android.overlay.permissioncontroller/10001} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{31e97f0 com.google.android.partnersetup/10124} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9f20169 com.google.android.apps.wallpaper.nexus/10141} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{8aec7ee com.google.android.apps.nexuslauncher/10169} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{369d48f com.google.android.nearby.halfsheet/10184} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{86d431c com.android.theme.font.notoserifsource/10066} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{4a04b25 com.google.android.safetycenter.resources/10189} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2c374fa com.android.internal.display.cutout.emulation.waterfall/10040} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{e392aab com.android.internal.systemui.navbar.transparent/10027} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{4997508 com.google.android.connectivity.resources/10183} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{32f74a1 com.android.providers.contacts.auto_generated_rro_product__/10020} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{643e6c6 com.google.android.feedback/10165} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{e5dc687 com.google.android.printservice.recommendation/10111} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{3d4d9b4 com.google.android.apps.photos/10146} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{326d288 com.google.android.calendar/10142} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{12db9dd com.google.android.documentsui/10098} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d07a952 com.android.systemui.emulation.pixel_3a_xl/10019} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9464423 com.android.systemui.emulation.pixel_6_pro/10063} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{1bfdd20 com.android.systemui.emulation.pixel_7_pro/10054} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ad116d9 com.android.systemui.emulation.pixel_8_pro/10006} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{4d3089e com.google.mainline.telemetry/10151} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2aeff7f com.android.carrierconfig.auto_generated_rro_product__/10064} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{195ab4c com.android.providers.partnerbookmarks/10102} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{fb34795 com.android.wallpaper.livepicker/10090} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{16310aa com.android.providers.telephony.auto_generated_rro_product__/10062} BLOCKED
+10-13 21:26:40.440 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{3be149b com.android.phone.auto_generated_rro_vendor__/10080} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d183038 com.google.mainline.adservices/10136} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{54dc811 com.android.imsserviceentitlement/10117} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{3398d76 com.google.android.healthconnect.controller/10181} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{7df5f77 com.android.internal.emulation.pixel_2_xl/10015} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{63c17e4 com.android.internal.emulation.pixel_3_xl/10056} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{535d44d com.android.internal.emulation.pixel_4_xl/10044} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{f290b02 com.android.internal.emulation.pixel_fold/10004} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{b607c13 com.android.bookmarkprovider/10113} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{794ce50 com.google.android.overlay.pixelconfigcommon/10018} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{3186849 com.android.systemui.accessibility.accessibilitymenu.auto_generated_rro_product__/10050} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2a0d54e com.android.systemui.emulation.pixel_3a/10011} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{7ccc66f com.android.systemui.emulation.pixel_4a/10005} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{f807f7c com.android.systemui.emulation.pixel_6a/10042} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{6764005 com.android.systemui.emulation.pixel_7a/10016} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{9ac58c9 com.google.android.settings.intelligence/10119} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{83fa2ca com.google.android.projection.gearhead/10123} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{a095a8b com.google.android.uwb.resources/10188} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{f9e34e8 com.android.cts.ctsshim/10180} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2141768 com.google.android.wifi.resources/10173} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{41fd781 com.google.android.wifi.dialog/10175} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{3fe4026 com.google.android.apps.wallpaper/10161} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{e311467 com.google.android.odad/10121} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{dc74214 com.android.settings.auto_generated_rro_product__/10033} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{3716abd com.android.internal.systemui.navbar.gestural/10051} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{fe38b2 com.google.android.apps.youtube.music/10156} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d309003 com.android.bluetoothmidiservice/10106} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{ee06b80 com.android.storagemanager.auto_generated_rro_product__/10024} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{b4ef5b9 com.google.android.cellbroadcastreceiver/10177} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{5932dfe com.android.phone.auto_generated_rro_product__/10061} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{822295f android.auto_generated_rro_product__/10069} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{da0bfac com.android.internal.systemui.navbar.gestural_narrow_back/10052} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{2e03475 com.google.android.inputmethod.latin/10145} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{f02c0a android.auto_generated_rro_vendor__/10075} BLOCKED
+10-13 21:26:40.441 I/AppsFilter(  539): interaction: PackageSetting{ac727d6 com.batwara.app/10192} -> PackageSetting{d69fc7b com.google.android.apps.restore/10120} BLOCKED
+10-13 21:26:40.452 D/nativeloader( 7238): Configuring clns-8 for other apk /data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk. target_sdk_version=34, uses_libraries=, library_path=/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/lib/x86_64:/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk!/lib/x86_64:/data/app/~~zPB2BgejmE0SvjV8dCZ69w==/com.google.android.trichromelibrary_567263637-rf4JTlfREC_6AiYnjoZDPQ==/TrichromeLibrary.apk!/lib/x86_64, permitted_path=/data:/mnt/expand
+10-13 21:26:40.793 W/com.batwara.app( 7238): Accessing hidden method Landroid/os/Trace;->isTagEnabled(J)Z (unsupported, reflection, allowed)
+10-13 21:26:40.797 W/com.batwara.app( 7238): Accessing hidden method Landroid/os/Trace;->traceBegin(JLjava/lang/String;)V (unsupported, reflection, allowed)
+10-13 21:26:40.797 W/com.batwara.app( 7238): Accessing hidden method Landroid/os/Trace;->traceEnd(J)V (unsupported, reflection, allowed)
+10-13 21:26:40.799 W/com.batwara.app( 7238): Accessing hidden method Landroid/os/Trace;->asyncTraceBegin(JLjava/lang/String;I)V (unsupported, reflection, allowed)
+10-13 21:26:40.801 W/com.batwara.app( 7238): Accessing hidden method Landroid/os/Trace;->asyncTraceEnd(JLjava/lang/String;I)V (unsupported, reflection, allowed)
+10-13 21:26:40.961 I/ActivityManager(  539): Start proc 7277:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0i1 for  {com.batwara.app/org.chromium.content.app.SandboxedProcessService0:0}
+10-13 21:26:40.988 W/chromium( 7238): [WARNING:dns_config_service_android.cc(115)] Failed to read DnsConfig.
+10-13 21:26:41.015 I/cr_WebViewApkApp( 7277): Launched version=113.0.5672.136 minSdkVersion=29 isBundle=false processName=com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0
+10-13 21:26:41.027 E/chromium( 7238): [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.batwara.app/cache/WebView/Default/HTTP Cache/Code Cache/js: No such file or directory (2)
+10-13 21:26:41.028 E/chromium( 7238): [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+10-13 21:26:41.028 E/chromium( 7238): [ERROR:simple_file_enumerator.cc(21)] opendir /data/user/0/com.batwara.app/cache/WebView/Default/HTTP Cache/Code Cache/wasm: No such file or directory (2)
+10-13 21:26:41.028 E/chromium( 7238): [ERROR:simple_index_file.cc(614)] Could not reconstruct index from disk
+10-13 21:26:41.048 D/ActivityManager(  539): sync unfroze 3396 com.google.android.webview:webview_service for 6
+10-13 21:26:41.085 D/Capacitor( 7238): Starting BridgeActivity
+10-13 21:26:41.206 D/CoreBackPreview(  539): Window{79620fb u0 com.batwara.app/com.batwara.app.MainActivity}: Setting back callback OnBackInvokedCallbackInfo{mCallback=android.window.IOnBackInvokedCallback$Stub$Proxy@d9924cf, mPriority=0, mIsAnimationCallback=false}
+10-13 21:26:41.494 W/ziparchive(  539): Unable to open '/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/base.dm': No such file or directory
+10-13 21:26:41.495 I/ActivityTaskManager(  539): Displayed com.batwara.app/.MainActivity for user 0: +1s909ms
+10-13 21:26:41.532 I/ImeTracker(  539): com.batwara.app:2afed198: onRequestHide at ORIGIN_SERVER_HIDE_INPUT reason HIDE_UNSPECIFIED_WINDOW
+10-13 21:26:41.532 I/ImeTracker(  539): com.batwara.app:2afed198: onCancelled at PHASE_SERVER_SHOULD_HIDE
+10-13 21:26:41.536 I/GoogleInputMethodService( 1646): GoogleInputMethodService.onStartInput():1877 onStartInput(EditorInfo{inputType=0x0(NULL) imeOptions=0x12000000 privateImeOptions=null actionName=UNSPECIFIED actionLabel=null actionId=0 initialSelStart=-1 initialSelEnd=-1 initialCapsMode=0x0 hintText=null label=null packageName=com.batwara.app fieldId=0 fieldName=null extras=null}, false)
+10-13 21:26:41.581 D/CoreBackPreview(  539): Window{384923 u0 Splash Screen com.batwara.app EXITING}: Setting back callback null
+10-13 21:26:41.584 W/InputManager-JNI(  539): Input channel object '384923 Splash Screen com.batwara.app (client)' was disposed without first being removed with the input manager!
+10-13 21:26:46.159 D/ProfileInstaller( 7238): Installing profile for com.batwara.app

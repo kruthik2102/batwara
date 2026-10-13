@@ -1,0 +1,45 @@
+device sdk_gphone64_x86_64 emulator-5554
+shot 01-welcome
+native {"ins":{"top":48.761905670166016,"bottom":0,"fontScale":1,"dark":false},"apps":[],"sat":"48.761905670166016px","ua":"Mozilla/5.0 (Linux; Android 14; sdk_gphone64_x86_64 Build/UE1A.230829.050; wv) AppleWebKit/537.36 (KHTML, like Gecko) Version/4.0 Chrome/113.0.5672.136 Mobile Safari/537.36"}
+shot 02-phone-keyboard
+shot 03-otp
+shot 04-empty
+shot 05-groups
+providers after-onboarding - d0b0c42/com.android.providers.settings/.SettingsProvider->3568:com.batwara.app/u0a192 s1/1 u0/0 +28s440ms | - ReceiverList{55a2434 3568 com.batwara.app/10192/u0 remote:9d7ab07} | - ReceiverList{7bbc8ee 3568 com.batwara.app/10192/u0 remote:2fe6669} | - ReceiverList{7de456d 3568 com.batwara.app/10192/u0 remote:2a91984} | - ReceiverList{87f9abb 3568 com.batwara.app/10192/u0 remote:4fc5b4a} | - ReceiverList{8f21122 3568 com.batwara.app/10192/u0 remote:7449eed} | - ReceiverList{a6773a5 3568 com.batwara.app/10192/u0 remote:6adbd9c} | - ReceiverList{ac363c9 3568 com.batwara.app/10192/u0 remote:26887d0} | - ReceiverList{d86296d 3568 com.batwara.app/10192/u0 remote:320d84} | - ReceiverList{eefbabc 3568 com.batwara.app/10192/u0 remote:b52e6af} | - ReceiverList{fddf2d9 3568 com.batwara.app/10192/u0 remote:9c6a920} | - ActivityRecord{289ff6d u0 com.batwara.app/.MainActivity t8} | - Task{9c0b71c #8 type=standard A=10192:com.batwara.app}
+groups list OK 3ms
+group opened OK 52ms
+shot 06-group
+shot 07-group-scrolled
+groups list OK 1532ms
+group opened OK 243ms
+back button pops the screen OK 924ms
+groups list OK 3ms
+group opened OK 510ms
+swipe right pops the screen OK 624ms
+groups list OK 3ms
+group opened OK 58ms
+shot 08-add-expense
+expense saved and sheet closed OK 475ms
+shot 09-saved
+providers after-expense - d0b0c42/com.android.providers.settings/.SettingsProvider->3568:com.batwara.app/u0a192 s1/1 u0/0 +1m0s313ms | - ReceiverList{55a2434 3568 com.batwara.app/10192/u0 remote:9d7ab07} | - ReceiverList{7bbc8ee 3568 com.batwara.app/10192/u0 remote:2fe6669} | - ReceiverList{7de456d 3568 com.batwara.app/10192/u0 remote:2a91984} | - ReceiverList{87f9abb 3568 com.batwara.app/10192/u0 remote:4fc5b4a} | - ReceiverList{8f21122 3568 com.batwara.app/10192/u0 remote:7449eed} | - ReceiverList{a6773a5 3568 com.batwara.app/10192/u0 remote:6adbd9c} | - ReceiverList{ac363c9 3568 com.batwara.app/10192/u0 remote:26887d0} | - ReceiverList{d86296d 3568 com.batwara.app/10192/u0 remote:320d84} | - ReceiverList{eefbabc 3568 com.batwara.app/10192/u0 remote:b52e6af} | - ReceiverList{fddf2d9 3568 com.batwara.app/10192/u0 remote:9c6a920} | - ActivityRecord{289ff6d u0 com.batwara.app/.MainActivity t8} | - Task{9c0b71c #8 type=standard A=10192:com.batwara.app}
+groups list OK 536ms
+group opened OK 50ms
+shot 10-pay
+back button closes the sheet OK 1463ms
+providers after-settle - d0b0c42/com.android.providers.settings/.SettingsProvider->3568:com.batwara.app/u0a192 s1/1 u0/0 +1m11s435ms | - ReceiverList{55a2434 3568 com.batwara.app/10192/u0 remote:9d7ab07} | - ReceiverList{7bbc8ee 3568 com.batwara.app/10192/u0 remote:2fe6669} | - ReceiverList{7de456d 3568 com.batwara.app/10192/u0 remote:2a91984} | - ReceiverList{87f9abb 3568 com.batwara.app/10192/u0 remote:4fc5b4a} | - ReceiverList{8f21122 3568 com.batwara.app/10192/u0 remote:7449eed} | - ReceiverList{a6773a5 3568 com.batwara.app/10192/u0 remote:6adbd9c} | - ReceiverList{ac363c9 3568 com.batwara.app/10192/u0 remote:26887d0} | - ReceiverList{d86296d 3568 com.batwara.app/10192/u0 remote:320d84} | - ReceiverList{eefbabc 3568 com.batwara.app/10192/u0 remote:b52e6af} | - ReceiverList{fddf2d9 3568 com.batwara.app/10192/u0 remote:9c6a920} | - ActivityRecord{289ff6d u0 com.batwara.app/.MainActivity t8} | - Task{9c0b71c #8 type=standard A=10192:com.batwara.app}
+groups list OK 646ms
+group opened OK 50ms
+settle sheet open OK 515ms
+dragging the sheet down closes it OK 971ms
+groups list OK 909ms
+group opened OK 8ms
+shot 11-android-share-sheet
+groups list OK 483ms
+theme after night mode dark
+shot 12-dark
+shot 13-dark-activity
+theme after day mode light
+providers end - d0b0c42/com.android.providers.settings/.SettingsProvider->3568:com.batwara.app/u0a192 s1/1 u0/0 +1m42s831ms | - ReceiverList{55a2434 3568 com.batwara.app/10192/u0 remote:9d7ab07} | - ReceiverList{7bbc8ee 3568 com.batwara.app/10192/u0 remote:2fe6669} | - ReceiverList{7de456d 3568 com.batwara.app/10192/u0 remote:2a91984} | - ReceiverList{87f9abb 3568 com.batwara.app/10192/u0 remote:4fc5b4a} | - ReceiverList{8f21122 3568 com.batwara.app/10192/u0 remote:7449eed} | - ReceiverList{a6773a5 3568 com.batwara.app/10192/u0 remote:6adbd9c} | - ReceiverList{ac363c9 3568 com.batwara.app/10192/u0 remote:26887d0} | - ReceiverList{d86296d 3568 com.batwara.app/10192/u0 remote:320d84} | - ReceiverList{eefbabc 3568 com.batwara.app/10192/u0 remote:b52e6af} | - ReceiverList{fddf2d9 3568 com.batwara.app/10192/u0 remote:9c6a920} | - ActivityRecord{289ff6d u0 com.batwara.app/.MainActivity t8} | - Task{9c0b71c #8 type=standard A=10192:com.batwara.app}
+data survived a restart
+shot 14-after-restart
+RESULT ok

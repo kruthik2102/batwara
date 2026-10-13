@@ -1,0 +1,153 @@
+ACTIVITY MANAGER RUNNING PROCESSES (dumpsys activity processes)
+  All known processes:
+  *APP* UID 99000 ProcessRecord{2287196 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0}
+    user #0 uid=10192 ISOLATED uid=99000 gids={}
+    mRequiredAbi=x86_64 instructionSet=x86_64
+    class=org.chromium.android_webview.nonembedded.WebViewApkApplication
+    dir=/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk publicDir=/data/app/~~kK5b2hdJxRiPIPvOYDGf6w==/com.google.android.webview-20MncpWPCfDj7m3zUg3Hrw==/WebViewGoogle.apk data=/data/user/0/com.google.android.webview
+    packageList={com.batwara.app}
+    compat={420dpi}
+    thread=android.app.IApplicationThread$Stub$Proxy@8e1fab6
+    pid=3712
+    lastActivityTime=-58s960ms    startUptimeTime=-1m0s64ms    startElapsedTime=-1m0s64ms
+    startSeq=54
+    mountMode=NONE
+    lastPssTime=-16s625ms pssProcState=3 pssStatType=0 nextPssTime=+9m43s185ms
+    lastPss=66MB lastSwapPss=0.00 lastCachedPss=0.00 lastCachedSwapPss=0.00 lastRss=185MB
+    trimMemoryLevel=0
+    procStateMemTracker: best=2 (2=2 1.5x)
+    lastRequestedGc=-59s657ms lastLowMemory=-59s657ms reportLowMemory=false
+    currentHostingComponentTypes=0x200 historicalHostingComponentTypes=0x200
+    reportedInteraction=true time=-59s657ms
+    adjSeq=8329 lruSeq=937
+    oom adj: max=1001 curRaw=0 setRaw=0 cur=0 set=0
+    mCurSchedGroup=3 setSchedGroup=3 systemNoUi=false
+    curProcState=3 mRepProcState=3 setProcState=3 lastStateTime=-59s657ms
+    curCapability=---NFU setCapability=---NFU
+
+    cached=false empty=true
+    hasClientActivities=true hasAboveClient=false treatLikeActivity=false
+    Services:
+      - ServiceRecord{1a8bff2 u0 com.batwara.app/org.chromium.content.app.SandboxedProcessService0:0}
+    lastCompactTime=0 lastCompactProfile=null
+    hasPendingCompaction=false    isFreezeExempt=false isPendingFreeze=false isFrozen=false
+    earliestFreezableTimeMs=--
+     Configuration={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.142 fontWeightAdjustment=0}
+     OverrideConfiguration={0.0 ?mcc0mnc ?localeList ?layoutDir ?swdp ?wdp ?hdp ?density ?lsize ?long ?ldr ?wideColorGamut ?orien ?uimode ?night ?touch ?keyb/?/? ?nav/? winConfig={ mBounds=Rect(0, 0 - 0, 0) mAppBounds=null mMaxBounds=Rect(0, 0 - 0, 0) mDisplayRotation=undefined mWindowingMode=undefined mDisplayWindowingMode=undefined mActivityType=undefined mAlwaysOnTop=undefined mRotation=undefined} ?fontWeightAdjustment}
+     mLastReportedConfiguration={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.142 fontWeightAdjustment=0}
+  *APP* UID 10192 ProcessRecord{3e4cc40 3568:com.batwara.app/u0a192}
+    user #0 uid=10192 gids={3003, 50192, 20192, 9997}
+    mRequiredAbi=x86_64 instructionSet=null
+    dir=/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/base.apk publicDir=/data/app/~~9ETrrrwjR3X6URmbXJywag==/com.batwara.app-ndYhHYcR8DUr21WLXDjOtQ==/base.apk data=/data/user/0/com.batwara.app
+    packageList={com.batwara.app}
+    packageDependencies={com.google.android.webview}
+    compat={420dpi}
+    thread=android.app.IApplicationThread$Stub$Proxy@15f63b7
+    pid=3568
+    lastActivityTime=-1m0s463ms    startUptimeTime=-1m1s358ms    startElapsedTime=-1m1s358ms
+    startSeq=51
+    mountMode=DEFAULT
+    lastPssTime=-40s113ms pssProcState=2 pssStatType=0 nextPssTime=+19s853ms
+    lastPss=79MB lastSwapPss=0.00 lastCachedPss=0.00 lastCachedSwapPss=0.00 lastRss=223MB
+    trimMemoryLevel=0
+    procStateMemTracker: best=1 (1=1 1.5x)
+    lastRequestedGc=-1m0s517ms lastLowMemory=-1m0s517ms reportLowMemory=false
+    currentHostingComponentTypes=0x0 historicalHostingComponentTypes=0x0
+    reportedInteraction=true time=-1m0s504ms
+    adjSeq=8329 lruSeq=830
+    oom adj: max=1001 curRaw=0 setRaw=0 cur=0 set=0
+    mCurSchedGroup=3 setSchedGroup=3 systemNoUi=false
+    curProcState=2 mRepProcState=2 setProcState=2 lastStateTime=-1m0s504ms
+    curCapability=LCMNFU setCapability=LCMNFU
+
+    hasShownUi=true pendingUiClean=true
+    cached=false empty=false
+    foregroundActivities=true (rep=true)
+    mConnections:
+      - ConnectionRecord{93e3259 u0 CR WPRI com.batwara.app/org.chromium.content.app.SandboxedProcessService0:0:@a8a36a0 flags=0x80000021}
+      - ConnectionRecord{f2d73ee u0 CR IMP com.batwara.app/org.chromium.content.app.SandboxedProcessService0:0:@dcfdd69 flags=0x80000041}
+    Published Providers:
+      - androidx.startup.InitializationProvider
+        -> ContentProviderRecord{c896724 u0 com.batwara.app/androidx.startup.InitializationProvider}
+      - androidx.core.content.FileProvider
+        -> ContentProviderRecord{dc6128d u0 com.batwara.app/androidx.core.content.FileProvider}
+    Connected Providers:
+      - d0b0c42/com.android.providers.settings/.SettingsProvider->3568:com.batwara.app/u0a192 s1/1 u0/0 +1m0s313ms
+    mReceivers:
+      - ReceiverList{55a2434 3568 com.batwara.app/10192/u0 remote:9d7ab07}
+      - ReceiverList{7bbc8ee 3568 com.batwara.app/10192/u0 remote:2fe6669}
+      - ReceiverList{7de456d 3568 com.batwara.app/10192/u0 remote:2a91984}
+      - ReceiverList{87f9abb 3568 com.batwara.app/10192/u0 remote:4fc5b4a}
+      - ReceiverList{8f21122 3568 com.batwara.app/10192/u0 remote:7449eed}
+      - ReceiverList{a6773a5 3568 com.batwara.app/10192/u0 remote:6adbd9c}
+      - ReceiverList{ac363c9 3568 com.batwara.app/10192/u0 remote:26887d0}
+      - ReceiverList{d86296d 3568 com.batwara.app/10192/u0 remote:320d84}
+      - ReceiverList{eefbabc 3568 com.batwara.app/10192/u0 remote:b52e6af}
+      - ReceiverList{fddf2d9 3568 com.batwara.app/10192/u0 remote:9c6a920}
+    lastCompactTime=0 lastCompactProfile=null
+    hasPendingCompaction=false    isFreezeExempt=false isPendingFreeze=false isFrozen=false
+    earliestFreezableTimeMs=--
+    Activities:
+      - ActivityRecord{289ff6d u0 com.batwara.app/.MainActivity t8}
+    Recent Tasks:
+      - Task{9c0b71c #8 type=standard A=10192:com.batwara.app}
+     Configuration={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.142 fontWeightAdjustment=0}
+     OverrideConfiguration={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=standard mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.2 fontWeightAdjustment=0}
+     mLastReportedConfiguration={1.0 310mcc260mnc [en_US] ldltr sw411dp w411dp h842dp 420dpi nrml long port finger qwerty/v/v -nav/h winConfig={ mBounds=Rect(0, 0 - 1080, 2400) mAppBounds=Rect(0, 128 - 1080, 2337) mMaxBounds=Rect(0, 0 - 1080, 2400) mDisplayRotation=ROTATION_0 mWindowingMode=fullscreen mDisplayWindowingMode=fullscreen mActivityType=undefined mAlwaysOnTop=undefined mRotation=ROTATION_0} as.3 s.142 fontWeightAdjustment=0}
+     mActivityStateFlags=W|V|R|VT|taskLayer=1
+
+  Isolated process list (sorted by uid):
+    Isolated #0: ProcessRecord{2287196 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0}
+
+  OOM levels:
+    -900: SYSTEM_ADJ (   73,728K)
+    -800: PERSISTENT_PROC_ADJ (   73,728K)
+    -700: PERSISTENT_SERVICE_ADJ (   73,728K)
+      0: FOREGROUND_APP_ADJ (   73,728K)
+     100: VISIBLE_APP_ADJ (   92,160K)
+     200: PERCEPTIBLE_APP_ADJ (  110,592K)
+     225: PERCEPTIBLE_MEDIUM_APP_ADJ (  129,024K)
+     250: PERCEPTIBLE_LOW_APP_ADJ (  129,024K)
+     300: BACKUP_APP_ADJ (  221,184K)
+     400: HEAVY_WEIGHT_APP_ADJ (  221,184K)
+     500: SERVICE_ADJ (  221,184K)
+     600: HOME_APP_ADJ (  221,184K)
+     700: PREVIOUS_APP_ADJ (  221,184K)
+     800: SERVICE_B_ADJ (  221,184K)
+     900: CACHED_APP_MIN_ADJ (  221,184K)
+     999: CACHED_APP_MAX_ADJ (  322,560K)
+
+  Process OOM control (72 total, non-act at 5, non-svc at 5):
+    Proc # 1: fg     T/A/TOP  LCMNFU  t: 0 3568:com.batwara.app/u0a192 (top-activity)
+        oom: max=1001 curRaw=0 setRaw=0 cur=0 set=0
+        state: cur=TOP  set=TOP  lastPss=79MB lastSwapPss=0.00 lastCachedPss=0.00
+        cached=false empty=false hasAboveClient=false
+    Proc # 2: fg     T/ /BTOP ---NFU  t: 0 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0 (service)
+        com.batwara.app/org.chromium.content.app.SandboxedProcessService0:0<=Proc{3568:com.batwara.app/u0a192}
+        oom: max=1001 curRaw=0 setRaw=0 cur=0 set=0
+        state: cur=BTOP set=BTOP lastPss=66MB lastSwapPss=0.00 lastCachedPss=0.00
+        cached=false empty=true hasAboveClient=false
+
+  mHomeProcess: ProcessRecord{53274a0 1137:com.google.android.apps.nexuslauncher/u0a169}
+  mPreviousProcess: null
+
+  Raw LRU list (dumpsys activity lru):
+    Activities:
+    #70: fg     TOP  LCMNFU 3568:com.batwara.app/u0a192 act:activities|recents
+    #69: fg     BTOP ---NFU 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0 act:client
+
+  Process LRU list (sorted by oom_adj, 72 total, non-act at 5, non-svc at 5):
+    Proc # 1: fg     T/A/TOP  LCMNFU  t: 0 3568:com.batwara.app/u0a192 (top-activity)
+    Proc # 2: fg     T/ /BTOP ---NFU  t: 0 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0 (service)
+        com.batwara.app/org.chromium.content.app.SandboxedProcessService0:0<=Proc{3568:com.batwara.app/u0a192}
+
+  PID mappings:
+    PID #3568: ProcessRecord{3e4cc40 3568:com.batwara.app/u0a192}
+    PID #3712: ProcessRecord{2287196 3712:com.google.android.webview:sandboxed_process0:org.chromium.content.app.SandboxedProcessService0:0/u0a192i0}
+  mPreviousProcessVisibleTime: 0
+  mDeviceIdleAllowlist=[2000, 10086, 10089, 10091, 10130, 10167, 10177]
+  mDeviceIdleExceptIdleAllowlist=[2000, 10084, 10086, 10089, 10091, 10094, 10117, 10130, 10133, 10167, 10177]
+  mDeviceIdleTempAllowlist=[10118]
+  mFgsStartTempAllowList:
+    u0a118:  duration=20000 callingUid=u0a118 reasonCode=UNKNOWN reason=726c4ff com.google.android.apps.wellbeing.action.SCREEN_TURNING_OFF/u0 expiration=2026-10-13 21:26:09.505 (+12s700ms)
+  mForceBackgroundCheck=false
