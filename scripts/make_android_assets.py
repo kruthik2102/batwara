@@ -51,8 +51,10 @@ def splash(size, bg):
     return img.convert('RGB')
 
 for f in sorted(res.glob('drawable*/splash.png')):
-    size = Image.open(f).size
     folder = f.parent.name
+    if 'night' in folder:
+        continue  # written below from the matching day folder
+    size = Image.open(f).size
     splash(size, (242, 242, 247, 255)).save(f)
     if folder.startswith('drawable-port') or folder.startswith('drawable-land'):
         orient, dens = folder.split('-')[1], folder.split('-')[2]
