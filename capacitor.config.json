@@ -19,5 +19,6 @@
       "smallIcon": "ic_stat_batwara",
       "iconColor": "#5856D6"
     }
-  }
+  },
+  "loggingBehavior": "none"
 }

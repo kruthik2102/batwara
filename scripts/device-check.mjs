@@ -8,6 +8,18 @@ const PKG = 'com.batwara.app';
 fs.mkdirSync(OUT, { recursive: true });
 const log = (...a) => { const line = a.join(' '); console.log(line); fs.appendFileSync(`${OUT}/log.txt`, line + '\n'); };
 const wait = (ms) => new Promise((r) => setTimeout(r, ms));
+/** Poll until fn() returns the expected value (the software-rendered emulator is slow). */
+async function until(label, fn, expected, timeout = 8000) {
+  const t0 = Date.now();
+  let v;
+  while (Date.now() - t0 < timeout) {
+    v = await fn();
+    if (v === expected) { log(label, 'OK', `${Date.now() - t0}ms`); return true; }
+    await wait(250);
+  }
+  log(label, 'FAILED', 'last value', v);
+  return false;
+}
 
 const [device] = await android.devices({ omitDriverInstall: true });
 if (!device) throw new Error('No Android device');
@@ -67,10 +79,17 @@ try {
   await page.evaluate(() => document.querySelector('.navstack:not(.is-inactive) .screen-host[data-depth="0"] .screen-scroll').scrollTo(0, 640));
   await shotOf('07-group-scrolled');
 
+  const screens = () => page.locator(`${active} .screen-host`).count();
   step = 'back-button';
   await device.shell('input keyevent 4');
-  await wait(1500);
-  log('screens after back button', await page.locator(`${active} .screen-host`).count());
+  await until('back button pops the screen', screens, 1);
+
+  step = 'swipe-back';
+  await page.click(`${active} .row-title:has-text("Goa trip")`);
+  await until('group opened', screens, 2);
+  await wait(800);
+  await device.shell('input swipe 160 1500 1000 1520 220');
+  await until('swipe right pops the screen', screens, 1);
 
   step = 'add-expense';
   await page.click(`${active} .row-title:has-text("Goa trip")`);
@@ -92,9 +111,16 @@ try {
   await page.click('.sheet-card .row:has-text("Aarav")');
   await wait(1200);
   await shotOf('10-pay');
+  const sheets = () => page.locator('.sheet-layer').count();
   await device.shell('input keyevent 4');
-  await wait(1500);
-  log('sheets after back button', await page.locator('.sheet-layer').count());
+  await until('back button closes the sheet', sheets, 0);
+
+  step = 'drag-dismiss';
+  await page.click(`${active} .btn:has-text("Settle Up")`);
+  await until('settle sheet open', sheets, 1);
+  await wait(900);
+  await device.shell('input swipe 540 420 540 2100 260');
+  await until('dragging the sheet down closes it', sheets, 0);
 
   step = 'share';
   await page.click(`${active} .glass-btn[aria-label="Share group"]`);
